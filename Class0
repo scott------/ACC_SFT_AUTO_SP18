@@ -41,7 +41,7 @@ Regions (DEV, QA, STAGING, PROD)
 QA's role
 Software Automation
 XML - DOM
-https://www.w3schools.com/xml/dom_intro.asp
+<web_resource>https://www.w3schools.com/xml/dom_intro.asp</web_resource>
 API (what would a car API look like?) 
 Selenium browser APIs
 Webdriver (Firefox, Chrome)
