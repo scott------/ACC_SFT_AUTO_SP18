@@ -50,13 +50,16 @@ Programming (sytax, semantics, repetition, branching, fuctions, variables, namin
 </Lecture> 
 
 <Lab>
-Actions:
+<Bootstrap>
 Install Python 
 <web_resource>https://www.python.org/downloads/release/python-2714/</web_resource>
-Bootstrap Selenuim, Chrome driver, Python
+Selenuim, Chrome driver, Python
 Run basic tests using simple examples provided on Selenium site
+GitHub Accounts
+<web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18</web_resource>
 Visual Studio install
 <web_resource>https://www.visualstudio.com/vs/community/</web_resource>
+</Bootstrap>
 </Lab> 
 
 <Exercises> 
