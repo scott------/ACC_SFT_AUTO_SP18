@@ -1,0 +1,66 @@
+<Class0>
+<Intro>
+Teacher introduction
+Basic student introductions
+
+</Intro>
+<CourseInfo>
+Course information:
+Description: Automated Web Testers do the methodical, patient yet collaborative work of ensuring that revisions and updates to websites and web apps are error-free.
+
+The websites and web apps we use are becoming more complex and dynamic; testing the quality of content and code manually has therefore also become very time intensive. Using Selenium and WebDriver, a testing process that would require two weeks of manual checking can be done in minutes. Automated testing is therefore a needed skill for the many website development, web app development and software development companies in our region.  In addition, the skills and habits practiced in the course are part of the foundation for a  career in cyber security.
+</CourseInfo> 
+
+<ClassFlow> 
+How the classes run (45 min lecure then break, immersive, adaptive)
+</ClassFlow>
+
+<Survey>
+Survey for technical capabilities:
+Who uses Windows vs Mac vs Linux? 
+What are you most interested in doing within IT? 
+Have you ever built or upgraded a computer?
+Who can create web pages? 
+Who has done some programming?
+What is an IDE - Visual Studio?
+</Survey> 
+
+<Lecture>
+Lecture Topics:
+Computers
+Software
+WWW
+URL
+DNS
+IP
+Client Server
+HTML (and other structured interpreted doc formats XML JSON)
+Web Services WSDL vs REST
+SDLC
+Regions (DEV, QA, STAGING, PROD)
+QA's role
+Software Automation
+XML - DOM
+https://www.w3schools.com/xml/dom_intro.asp
+API (what would a car API look like?) 
+Selenium browser APIs
+Webdriver (Firefox, Chrome)
+Python
+Programming (sytax, semantics, repetition, branching, fuctions, variables, naming convetions) 
+</Lecture> 
+
+<Lab>
+Actions:
+Install Python from https://www.python.org/downloads/release/python-2714/
+Bootstrap Selenuim, Chrome driver, Python
+Run basic tests using simple examples provided on Selenium site
+Visual Studio install
+https://www.visualstudio.com/vs/community/
+</Lab> 
+
+<Exercises> 
+Exercises to work through during the week:
+https://www.w3schools.com/xml/dom_intro.asp
+https://www.youtube.com/watch?v=N4mEzFDjqtA
+</Exercises>  
+</Class0>
