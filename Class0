@@ -56,6 +56,7 @@ Git (fork, pull, push, commit)
 Install Python 
 <web_resource>https://www.python.org/downloads/release/python-2714/</web_resource>
 Selenuim, Chrome driver, Python
+<web_resource>http://pypi.python.org/pypi/selenium</web_resource>
 Run basic tests using simple examples provided on Selenium site
 GitHub Accounts
 <web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18</web_resource>
