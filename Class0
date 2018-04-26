@@ -51,16 +51,17 @@ Programming (sytax, semantics, repetition, branching, fuctions, variables, namin
 
 <Lab>
 Actions:
-Install Python from https://www.python.org/downloads/release/python-2714/
+Install Python 
+<web_resource>https://www.python.org/downloads/release/python-2714/</web_resource>
 Bootstrap Selenuim, Chrome driver, Python
 Run basic tests using simple examples provided on Selenium site
 Visual Studio install
-https://www.visualstudio.com/vs/community/
+<web_resource>https://www.visualstudio.com/vs/community/</web_resource>
 </Lab> 
 
 <Exercises> 
 Exercises to work through during the week:
-https://www.w3schools.com/xml/dom_intro.asp
-https://www.youtube.com/watch?v=N4mEzFDjqtA
+<web_resource>https://www.w3schools.com/xml/dom_intro.asp</web_resource>
+<web_resource>https://www.youtube.com/watch?v=N4mEzFDjqtA</web_resource>
 </Exercises>  
 </Class0>
