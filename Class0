@@ -53,16 +53,30 @@ Git (fork, pull, push, commit)
 
 <Lab>
 <Bootstrap>
-Install Python 
+0. Take a break you are doing great!
+
+1. Install Python 
 <web_resource>https://www.python.org/downloads/release/python-2714/</web_resource>
-Selenuim, Chrome driver, Python
-Run basic tests using simple examples provided on Selenium site
-GitHub Accounts
+
+2.Reboot your computer
+
+3.Install (we will do this at the start of Class 2) 
+Selenuim and Chrome driver
+<web_resource>http://pypi.python.org/pypi/selenium</web_resource>
+
+4.GitHub Accounts
 <web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18</web_resource>
-Visual Studio install
+
+5.Visual Studio Community Edition install
 <web_resource>https://www.visualstudio.com/vs/community/</web_resource>
 </Bootstrap>
 </Lab> 
+
+6. Setup a Slack account
+<web_resource>https://slack.com</web_resource>
+
+7. Slack channel
+<web_resource>https://accsftauto.slack.com/messages/CAE032ELC/#</web_resource>
 
 <Exercises> 
 Exercises to work through during the week:
