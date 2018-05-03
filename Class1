@@ -45,7 +45,73 @@ BeautifulSoup
 </Lecture> 
 
 <test_automation>
+Test Automation Lecture Notes
 
+
+Advantages to test automation:
+Repeatability
+Speed
+Precision
+Honest :-) or thorough to a fault
+Cheap to run once developed which encourages regression testing inclusion in dev process
+Programmatic actions based on results
+Custom reports
+Enforces discipline
+Disadvantages
+Expensive to write
+Expensive to maintain
+Not fast to develop
+Not as smart as a human...yet
+Not flexible/ is rigid
+
+
+Should we always automate?
+
+Cases against automated testing
+UI is scheduled to change
+Not enough budget 
+Time
+Money
+You can throw people at a short term effort
+Automation hates to be thrown
+
+Popular Test Automation tools
+Selenium
+Telerik TestStudio
+TestComplete SmartBear
+HP QuickTest Pro
+Pywinauto
+
+Test Types
+Static
+Do the standard parts of the page appear as expected?
+E.G. - is the company logo in the top left hand corner?
+Is the Page Title correctly spelled?
+Is the right address displayed in the contact page?
+Links
+Do all the links work?
+This is normally a good case for automation.
+Functions aka use cases
+Can you do the things that the business rules say you should be able to?
+Are the functions working that are specified for your application?
+E.G. - Able to sign on
+Recover password
+Change password
+Password complexity enforced
+
+
+Are we stopping at the first error or are we logging errors and continuing?  (assert vs verify)
+Assert can be important depending on the complexity and degree of dependency of function results
+Verify can provide a quick and dirty overview but may miss deeper bugs
+
+
+
+Location strategy:
+ElementID
+Element name attribute
+XPath statement
+link text
+document object model (DOM)
 
 <test_automation>
 
