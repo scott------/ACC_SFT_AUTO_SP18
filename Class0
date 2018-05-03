@@ -62,6 +62,7 @@ Git (fork, pull, push, commit)
 
 3.Install (we will do this at the start of Class 2) 
 Selenuim and Chrome driver
+c:\Python27\Scripts\pip install -U selenium
 <web_resource>http://pypi.python.org/pypi/selenium</web_resource>
 
 4.GitHub Accounts
