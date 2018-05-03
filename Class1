@@ -51,7 +51,6 @@ BeautifulSoup
 
 
 <Lab>
-<Bootstrap>
 0. Take a break you are doing great!
 
 1.1 Install BeautifulSoup using PIP:
@@ -82,7 +81,7 @@ for link in soup.find_all('a'):
 
 3.Using Example 0 and Example 1 build a Selenuim and Chrome driver python script to open https://albany.craigslist.org/ and search for something you are interesting in buying
 <web_resource>http://pypi.python.org/pypi/selenium</web_resource>
-
+</Lab>
 
 <Exercises> 
 Exercises to work through during the week:
