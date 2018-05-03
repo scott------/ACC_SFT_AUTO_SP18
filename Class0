@@ -65,6 +65,9 @@ Selenuim and Chrome driver
 c:\Python27\Scripts\pip install -U selenium
 <web_resource>http://pypi.python.org/pypi/selenium</web_resource>
 
+Download Chrome Driver for Selenium
+<web_resource>https://chromedriver.storage.googleapis.com/index.html?path=2.38/</web_resource>
+
 4.GitHub Accounts
 <web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18</web_resource>
 
