@@ -154,7 +154,7 @@ Exercises to work through during the week:
 1. Read through this section of the Selenium documentation.  This is an excellent read about testing/QA in general.
 <web_resource>https://www.seleniumhq.org/docs/01_introducing_selenium.jsp#</web_resource>
 
-2.Complete two pull requests to class1 on our Gitgub branch.  Both requests must be approved by me to be considered complete.
+2.Complete two pull requests to class1 on our Github branch.  Both requests must be approved by me to be considered complete.
 Pull requests should be edits to the <test_automation> section of this document.  They should contain facts from the test automation web resource noted above.
 
 3. Write a python script to open your favorite website.  At the start of next week's class I will ask you to show me the working script.
