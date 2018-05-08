@@ -82,6 +82,8 @@ TestComplete SmartBear
 HP QuickTest Pro
 Pywinauto
 
+Top 10 Automation Tools https://medium.com/@briananderson2209/best-automation-testing-tools-for-2018-top-10-reviews-8a4a19f664d2
+
 Test Types
 Static
 Do the standard parts of the page appear as expected?
@@ -104,7 +106,7 @@ Are we stopping at the first error or are we logging errors and continuing?  (as
 Assert can be important depending on the complexity and degree of dependency of function results
 Verify can provide a quick and dirty overview but may miss deeper bugs
 
-
+Automated Testing Best Practices https://smartbear.com/learn/automated-testing/best-practices-for-automation/
 
 Location strategy:
 ElementID
