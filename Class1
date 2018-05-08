@@ -121,8 +121,9 @@ document object model (DOM)
 
 1.1 Install BeautifulSoup using PIP:
 Open a command shell
-CD to your Python directory
-CD to Python Scripts (c:\Python27\Scripts)
+CD to your Python directory (Hint: cd ..)
+CD to Python Scripts (c:\Python27\Scripts\pip.exe install beautifulsoup4)
+(pip.exe might be named pip2.7.exe or something else so look up the file name in the Python27\Scripts folder)
 pip install requests
 pip install beautifulsoup4 
 
