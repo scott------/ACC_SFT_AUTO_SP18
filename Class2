@@ -97,6 +97,12 @@ or
 13. Admire your work :-)
 14. Try modifying the file to launch different websites
 
+Example 0:
+import webbrowser
+#url='https://www.Google.com/'
+webbrowser.open(url)
+
+
 
 Let’s walk through a craigslist script
 <web_resource>https://github.com/6aiaman/automate_craigslist/blob/master/craigslist_bot.py</web_resource>
