@@ -84,6 +84,7 @@ Pywinauto
 
 Selenium's Tool Suite:
 -Selenium 2 (webdriver): is the latest automation tool and the product of merging Selenium RC and Google's WebDriver project in 2009. This merge was a response to address Javascript limitations of the initial Selenium project. 
+-Selenium IDE (Integrated Development Environment): Firefox plugin that allows user to record actions in the browser and export those recordings into scripts. 
 
 Test Types
 Static
