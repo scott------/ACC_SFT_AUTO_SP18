@@ -99,7 +99,7 @@ or
 
 Example 0:
 import webbrowser
-#url='https://www.Google.com/'
+url='https://www.Google.com/'
 webbrowser.open(url)
 
 
