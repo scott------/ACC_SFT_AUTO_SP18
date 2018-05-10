@@ -1,0 +1,108 @@
+<Intro>
+<Review>
+Uses of Software Automation
+API
+Test types (static, dynamic, regression, reliability)
+Cases for and against test automation
+Location Strategies
+Assert vs Verify
+</Review>
+</Intro>
+
+<CourseInfo>
+Course information: All course info is posted to GitHub.  
+<web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18</web_resource>
+</CourseInfo> 
+
+<ClassFlow> 
+Survey
+Lecture
+Discussion
+Lab
+Assignments
+</ClassFlow>
+
+<Survey>
+What large industry conference is ongoing right now?
+Have you heard about duplex?
+<web_resource>https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html</web_resource>
+What is the PMBOK?
+What is NEAT?
+<web_resource>https://github.com/xviniette/FlappyLearning</web_resource>
+</Survey> 
+
+
+<Lecture>
+Basic DOS Commands
+CD
+CD \
+CD ..
+DIR
+MKDIR
+SET vs SETX
+PATH 
+
+IT Orgs, Roles, and Responsibilities
+User
+Developer
+Solution Architect
+Data Architect
+DBA
+QA
+Server Admins
+Requirements Traceability Matrix (RTM)
+Lists all business requirements in BRD
+Relates BRD elements to FS
+Test Cases
+<web_resource>http://www.opencodez.com/software-testing/create-requirement-traceability-matrix-rtm-free-sample-download.htm</web_resource>
+
+Software Testing Roles and Responsibilities
+QA/Test Lead
+Defining the testing activities for subordinates testers or test engineers.
+All responsibilities of test planning
+Ensuring quality test plans are developed
+Ensuring the standards are defined for quality
+Measuring quality and overall testing progress
+To check if the team has all the necessary resources to execute the testing activities.
+Create status reports of testing activities and reports out.
+Test Engineer
+Analyzes the requirements and feature sets 
+Writes test plans
+Builds tests
+Execute test cases and record in RTM or other
+Ensure regression tests are performed and results reported
+Pesticide Paradox
+QA is a practice
+</Lecture>
+
+<LAB>
+
+Let’s finish the Selenium setup
+1. setx /M PATH "%PATH%C:\Python27"
+2. echo %path%
+3. setx /M PATH "%PATH%C:\Python27\scripts"
+4. echo %path%
+5. Admire your work :-)
+6. Reboot
+7. Launch a command prompt and echo your Path checking to see that the changes from 1 and 2 are present
+8. Copy the chromedriver.exe to your C:\Python27 directory
+9. Open IDLE
+10. Open a new file
+11. Paste in the example script 
+12. Hit F5 to save and run
+13. Admire your work :-)
+14. Try modifying the file to launch different websites
+
+
+Let’s walk through a craigslist script
+<web_resource>https://github.com/6aiaman/automate_craigslist/blob/master/craigslist_bot.py</web_resource>
+Try Lab steps 1.1 through 1.5 from Class1
+</Lab>
+
+<Exercises> 
+Exercises to work through during the week:
+Read Survey on Manual and Automation Testing strategies and Tools for a Software Application <web_resource>http://ijarcsse.com/Before_August_2017/docs/papers/Volume_7/4_April2017/V7I4-0190.pdf</web_resource>
+Read 5.3 from this paper <web_resource>http://selab.netlab.uky.edu/homepage/sw-test-roadmap-bertolino.pdf</web_resource>
+Read the git hub pull requests article <web_resource>https://help.github.com/articles/about-pull-requests/</web_resource>
+Feel free to contribute to the course documentation either by correcting mistakes or enhancing content
+</Exercises> 
