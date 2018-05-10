@@ -164,5 +164,12 @@ Exercises to work through during the week:
 Pull requests should be edits to the <test_automation> section of this document.  They should contain facts from the test automation web resource noted above.
 
 3. Write a python script to open your favorite website.  At the start of next week's class I will ask you to show me the working script.
+Try this script!
+
+import webbrowser
+
+url='https://www.Google.com/'
+webbrowser.open(url)
+
 </Exercises>  
 </Class0>
