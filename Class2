@@ -79,8 +79,12 @@ QA is a practice
 
 Let’s finish the Selenium setup
 1. setx /M PATH "%PATH%C:\Python27"
+or
+1. set %path%="%path%C:\Python27"
 2. echo %path%
-3. setx /M PATH "%PATH%C:\Python27\scripts"
+3. setx /M PATH "%PATH%C:\Python27\Scripts"
+or
+3. set %path%="%path%C:\Python27\Scripts"
 4. echo %path%
 5. Admire your work :-)
 6. Reboot
