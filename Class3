@@ -1,0 +1,130 @@
+<Class3>
+<Intro>
+<Review>
+Test types (static, dynamic, regression)
+Cases for and against test automation
+IT Orgs, Roles, and Responsibilities
+Requirements Traceability Matrix (RTM)
+Software Testing Roles and Responsibilities
+Pesticide Paradox
+QA is a practice
+</Review>
+</Intro>
+
+<CourseInfo>
+Course information: All course info is posted to GitHub.  
+<web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18</web_resource>
+Exams (mid and final)
+Panel
+</CourseInfo> 
+
+<ClassFlow> 
+Review
+Survey
+Lecture
+Discussion
+Lab
+Assignments
+</ClassFlow>
+
+<Survey>
+What are some large industry conferences that forecast the future of our industry?
+What are some IT industry blogs to keep up on?
+What is blockchain?
+</Survey> 
+
+
+<Lecture>
+SDLC types:
+Waterfall
+Agile
+Spiral
+
+More test types:
+Smoke tests
+Backend/Database testing
+Integration testing
+GUI testing
+Alpha/Beta/Pilot
+Performance testing
+Stress testing
+Data specific tests
+Accessibility testing (WCAG)
+<web_resource>https://www.w3.org/TR/WCAG20/</web_resource>
+Compatibility Backward, Forward, Sideways Testing
+Security testing
+
+Defect tracking systems and QA
+
+Developing a Test strategy:
+Goals
+Measures
+Mix
+Budget
+Control 
+Communication
+Flow
+Defect tracking
+
+Test Data Management
+
+Quality Assurance plans
+
+Group exercise determining test strategy and writing test scripts for:
+USPS
+Home Depot
+Reserve America
+</Lecture>
+
+<LAB>
+ArfArfMeow (AAM) a place for pets to share pictures and experiences with their people online.
+AAM is a Facebook like application that expects to have millions of concurrent online users.  They require that the application experience is very fluid and the CEO says he wants it to feel snappy.  They are launching a beta platform which will be made available through a viral invite only campaign.  Each new participant will be given 5 invites which they can send to fellow pet owners.  As each of them join they will also receive their own batch of 5 invites.  AAM has hired you as a Test Engineer to help them with there QA process.  
+AAM is asking you to concentrate on the beta screens of which there are three.  
+The first page is a login page.
+The requirements for the login page are as follows:
+Users must enter a valid email address as a username.
+Password must be at least 10 characters.
+Passwords can only be alpha numeric 1-9 a-z A-Z.
+Passwords are case sensitive.
+Password reset link will send a 6 digit code to the user which the user must enter into the screen as there temporary password.
+After 3 attempts the user is locked out and the ip address is banned which disables the user from visiting the login page; this must redirect them to call the AAM helpline 1-800-555-5555. 
+
+The second is a status status update page. 
+This is a simple web page which hosts a form that has an open text field for status entry, an icon of a camera, the username, a submit button, a clear button, and a cancel button.
+All status entries must include a some text in the status entry field.
+The status entry field can accept a maximum of 500 characters.
+The status entry field character set is limited to alphanumeric 1-9 a-z A-Z
+The submit button must be greyed out after clicking.
+The response time for submission must be as fast as possible but never longer than 3 seconds.
+The clear button must immediately clear the entire status.
+The camera button launches a file selection dialog that must allow a user to choose a picture to upload and post with the status.
+The username should always appear in the top left hand corner as a title.
+If the day is February 29th all page test should be purple.
+If the day of the week is a Monday the camera icon must not appear.  There will be no posts on AAM of pictures on Mondays the owner believes this is an edgy sort of corporate style decision.
+The cancel button must present an argument that asks the user if they are sure they want to abandon the status update.
+
+
+
+The third screen is a timeline that displays the statues of other people’s pets:
+This screen is the most often used.
+The timeline has a search button at the top and a timeline that runs down the length of the page that starts with the most recent updates at the top.
+The timeline contains up to 20 status updates and then pages the rest.
+To see older updates a user must scroll down and click next to see the next page of up to 20 statuses.
+It contains a search field that allows you to type in the name of a friend, your own name, or a hashtag.
+A search button activates the search feature and alters the page to show the most relevant results.
+The search field only accepts alphanumeric 1-9 a-z A-Z and the hashtag #.
+Users may enter up to 3 separate search terms per search.
+The username for the current user must be present at the top left hand corner of the brower with the format as follows [Username] [ArfArfMeow].
+The bottom of the screen must contain a footer that has links to the corporate AAM website, the human society, and the national pet registry.
+The bottom of the screen must also contain the phone number and address of AAM. 
+
+
+Create a test strategy and write test scripts for the ArfArfMeow application pages above.
+Determine what types of tests should be used and write a script for each type for the screen you believe they are appropriate to test.
+Write a minimum of 15 test scripts.  Be sure to use a mix of test types.
+</Lab>
+
+<Exercises> 
+Study for the exam. 
+</Exercises> 
+</Class3>
