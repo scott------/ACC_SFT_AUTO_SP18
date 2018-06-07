@@ -1,0 +1,116 @@
+<Class4>
+<Intro>
+<Review>
+</Review>
+</Intro>
+
+<CourseInfo>
+Course information: All course info is posted to GitHub.  
+<web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18</web_resource>
+</CourseInfo> 
+
+<ClassFlow> 
+Panel Discussion
+Survey
+Lecture
+Return graded exams
+Lab
+</ClassFlow>
+
+<Survey>
+What major IT events happend this week?
+</Survey> 
+
+
+<Lecture>
+Basic coding constructs (Objects, Methods, Properties, Variables, Lists)
+<web_resource>https://www.w3schools.com/python/default.asp</web_resource>
+</Lecture>
+
+<LAB>
+Lab
+Retest basic script
+Modify the website you are "getting" to http://demo-store.seleniumacademy.com/
+
+Discuss Elements (Selenium WebElements)
+Intro to chrome dev tools
+https://developers.google.com/web/tools/chrome-devtools/shortcuts
+
+Discuss location strategy types
+http://selenium-python.readthedocs.io/locating-elements.html
+
+find_elements_by_xpath
+find_element_by_name
+find_element_by_link_text
+find_element_by_partial_link_text
+find_element_by_tag_name
+find_element_by_class_name
+find_element_by_css_selector
+
+(Each of the has a plural to return lists (e.g. - find_elements_by_name)
+
+Discuss Explicit and Implicit Waits and page loading
+http://selenium-python.readthedocs.io/waits.html
+
+Example of input on located elements
+http://selenium-python.readthedocs.io/getting-started.html
+
+
+<code>
+import os
+from selenium import webdriver
+
+# get the path of chromedriver
+dir = os.path.dirname(__file__)
+chrome_driver_path = dir + '\chromedriver.exe'
+
+#remove the .exe extension on linux or mac platform
+
+# create a new Chrome session
+driver = webdriver.Chrome(chrome_driver_path)
+driver.implicitly_wait(30)
+driver.maximize_window()
+
+# navigate to the application home page
+driver.get('http://demo-store.seleniumacademy.com/')
+
+# get the search textbox
+search_field = driver.find_element_by_name('q')
+search_field.clear()
+
+# enter search keyword and submit
+search_field.send_keys('phones')
+search_field.submit()
+
+# get all the anchor elements which have product names displayed
+# currently on result page using find_elements_by_xpath method
+products = driver.find_elements_by_xpath("//h2[@class='product-name']/a")
+
+# get the number of anchor elements found
+print 'Found ' + str(len(products)) + ' products:'
+
+# iterate through each anchor element and
+# print the text that is name of the product
+for product in products:
+    print product.text
+
+# close the browser window
+driver.quit()
+
+</code>
+
+
+
+Excersise:
+Read through 
+<web_resource>http://selenium-python.readthedocs.io/locating-elements.html</web_resource>
+and
+<web_resource>http://selenium-python.readthedocs.io/waits.html</web_resource>
+
+
+</Lab>
+
+<Exercises> 
+Pick a website, other than the ones we discussed and looked at in class, that has a search form and determine what location strategies you could use to automate the different aspects of their website.  Be prepared to talk about which site and what methods you chose (and why).
+</Exercises> 
+</Class3>
