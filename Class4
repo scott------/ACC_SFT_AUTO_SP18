@@ -101,7 +101,7 @@ driver.quit()
 
 
 
-Excersise:
+Exercise:
 Read through 
 <web_resource>http://selenium-python.readthedocs.io/locating-elements.html</web_resource>
 and
