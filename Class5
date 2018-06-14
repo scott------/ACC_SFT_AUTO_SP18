@@ -1,0 +1,302 @@
+<Class5>
+<Intro>
+<Review>
+Programming in a Nutshell
+</Review>
+</Intro>
+
+<CourseInfo>
+Course information: All course info is posted to GitHub.  
+<web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18</web_resource>
+The make up day for our cancelled class will be July 12th
+</CourseInfo> 
+
+<ClassFlow> 
+Survey
+Short Lecture
+Lab
+</ClassFlow>
+
+<Survey>
+What did you think of the panel?
+Did you see the posting for the Meetup?
+<web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18/blob/master/Meetup</web_resource>
+Who understands the difference between webdriver(s) and headless Chrome?
+<web_resource>https://developers.google.com/web/updates/2017/04/headless-chrome</web_resource>
+</Survey> 
+
+<Lecture>
+Google Testing Blog (HT Vijaya)
+<web_resource>https://testing.googleblog.com</web_resource>
+
+Recommended resources:
+Learning Selenium Testing Tools - Third Edition
+<web_resource>https://www.amazon.com/Learning-Selenium-Testing-Tools-Third-ebook/dp/B00U01QQYS/ref=pd_sim_351_2?_encoding=UTF8&psc=1&refRID=4KA7FY5CKENP4QZ0GRRC</web_resource>
+
+Learning Selenium IDE Automation Testing Tool
+<web_resource>https://www.amazon.com/Learning-Selenium-Automation-Testing-Tool-ebook/dp/B06XCS3HQG</web_resource>
+
+Example Code:
+<web_resource>https://github.com/upgundecha/learnsewithpython</web_resource>
+
+Basic coding constructs deeper dive (Objects, Methods, Properties, Variables, Lists)
+<web_resource>https://www.w3schools.com/python/default.asp</web_resource>
+
+Python coding syntax
+<web_resource>https://www.w3resource.com/python/python-syntax.php</web_resource>
+Variables
+<web_resource>https://www.w3schools.com/python/python_variables.asp</web_resource>
+Implicit and Explicit variable types
+
+search_term = ‘weber’
+max_price = 200 
+result_num = 0
+
+Lists, Dictionary, Sets, Tuple, Array
+
+<web_resource>https://www.w3schools.com/python/python_arrays.asp</web_resource>
+
+
+Classes
+<web_resource>https://www.w3schools.com/python/python_classes.asp</web_resource>
+Object are class instances
+Set/Get properties
+
+Methods
+
+Conditions
+	From comparison operators the w3schools tutorial:
+Equals: a == b
+Not Equals: a != b
+Less than: a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+Basic if statements:
+if/elif/else
+
+score = 82
+if score >= 90:
+	print ‘A’
+elif score >= 80:
+print ‘B’
+else:
+print ‘Try again’  
+
+Loops
+while [condition]:
+	action
+
+for [element] in [set]:
+	action
+
+</Lecture>
+
+<Lab>
+Open a new Python IDLE session and open a new file.
+Enter the following code:
+# external module imports
+import time
+import datetime
+import random
+from array import *
+
+red = []
+black = []
+green = []
+
+#populate red
+red.append(1)
+red.append(3)
+red.append(5)
+red.append(7)
+red.append(9)
+red.append(12)
+red.append(14)
+red.append(16)
+red.append(18)
+red.append(19)
+red.append(21)
+red.append(23)
+red.append(25)
+red.append(27)
+red.append(30)
+red.append(32)
+red.append(34)
+red.append(36)
+
+#populate black
+black.append(2)
+black.append(4)
+black.append(6)
+black.append(8)
+black.append(10)
+black.append(11)
+black.append(13)
+black.append(15)
+black.append(17)
+black.append(20)
+black.append(22)
+black.append(24)
+black.append(26)
+black.append(28)
+black.append(29)
+black.append(31)
+black.append(33)
+black.append(35)
+
+#populate green
+green.append(0)
+green.append(37)
+
+#simulate the ball being played
+def roll_ball():
+    result = random.randrange(0, 37)   
+    return result
+
+def determine_bet():  
+    #print(len(results))
+    #print(results[len(results) - 1])
+    if len(ball_landed_on) > 3:
+        if ball_landed_on[turn - 1] == "black" and ball_landed_on[turn - 2] == "black" and ball_landed_on[turn - 3] == "black":
+            return [10, 'red']
+        elif ball_landed_on[turn - 1] == "red" and ball_landed_on[turn - 2] == "red" and ball_landed_on[turn - 3] == "red":
+            return [10, 'black']
+        elif ball_landed_on[turn - 1] == "black" and ball_landed_on[turn - 2] == "black" and ball_landed_on[turn - 3] == "black" and ball_landed_on[turn - 3] == "black":
+            return [30, 'red']
+        elif ball_landed_on[turn - 1] == "red" and ball_landed_on[turn - 2] == "red" and ball_landed_on[turn - 3] == "red" and ball_landed_on[turn - 3] == "red":
+            return [30, 'black']
+        elif ball_landed_on[turn - 1] == "black" and ball_landed_on[turn - 2] == "black" and ball_landed_on[turn - 3] == "black" and ball_landed_on[turn - 3] == "black" and ball_landed_on[turn - 3] == "black":
+            return [100, 'red']
+        elif ball_landed_on[turn - 1] == "red" and ball_landed_on[turn - 2] == "red" and ball_landed_on[turn - 3] == "red" and ball_landed_on[turn - 3] == "red" and ball_landed_on[turn - 3] == "red":
+            return [100, 'black']
+        else:
+            return[0, 'red']
+    else:
+           return[0, 'red']
+
+           
+money = 1000
+turn = 0
+results=array('i',[])
+ball_landed_on = []
+red_total = 0
+black_total = 0
+green_total = 0
+wins = 0
+losses = 0
+cash_high_total = money
+
+while money > 0:
+    #print('turn: ' + str(turn))
+    
+    
+    results.append(roll_ball())
+    if results[turn] in red:
+        #print("red")
+        red_total = red_total + 1
+        ball_landed_on.append("red")
+    elif results[turn] in black:
+        #print("black")
+        black_total = black_total + 1
+        ball_landed_on.append("black")
+    elif results[turn] in green:
+        #print("green")
+        green_total = green_total + 1
+        ball_landed_on.append("green")
+
+    bet = determine_bet()
+    #print('decide what to bet: ' + str(bet))
+    
+    if ball_landed_on[turn] == bet[1]:
+        #print('you won!!!!!!!!!!')
+        money = money + bet[0]
+        wins = wins + 1
+        if cash_high_total < money + bet[0]:
+            cash_high_total = money + bet[0]
+    else:
+        money = money - bet[0]
+        losses = losses + 1
+
+    
+    #print('results: ' + str(results[turn]))
+    #print('**********************************')
+    #money = money - results[turn]
+    turn = turn + 1
+    
+
+print("Number of turns: " + str(turn))
+print("Current cash amount: " + str(money))
+print("red, black, green: " + str(red_total) + ',' + str(black_total) + ',' + str(green_total))
+print("wins: " + str(wins))
+print("losses: " + str(losses))
+print("high cash amount: " + str(cash_high_total))
+
+#End roulette
+
+
+Run the Python program by hitting f5.
+Observe the results.
+Run the program several more times to see different results.
+Change the code so that you start with 100000 money.
+Change the code so that you quit playing before you lose all your money. 
+
+
+Be sure you have C:\Python27 and C:\Python27\Scripts in your PATH
+You can do two things to test this:
+
+Echo the path and visually verify;
+open a command prompt and type: echo %PATH%
+	
+Upgrade selenium;
+ open a new command prompt and type: pip install -U selenium
+
+If you have issues with either of the above two tests see the course wiki on pip and PATH setup
+<web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18/wiki/Python-PIP-setup</web_resource>
+
+Be sure chromedriver.exe is in your C:\Python27 directory
+Open file explorer and verify
+
+Get the latest chromedriver_win32.zip ,unzip it, and copy chromedriver.exe into your Python27 directory.
+<web_resource>https://sites.google.com/a/chromium.org/chromedriver/downloads</web_resource>
+
+Be sure you can run the “phones” code from Class 4.
+
+Download the geckodriver-v0.20.1-win32.zip from:
+<web_resource>https://github.com/mozilla/geckodriver/releases</web_resource>
+Extract the zip to a folder and copy geckodriver.exe to your C:\Python27 directory
+
+Alter the Class 4 code to count the number of shirts returned from a search for “shirts”.
+Alter the Class 4 code to count the number of shoes returned from a search for “shoes”
+View the source code in the search results page.  
+
+
+</Lab>
+
+<Exercises> 
+Write a simple python program which flips a coin 100 times.
+Hint you can do this in about 10 or so lines of python (though that can vary based on your solution) and you will need to use the random library which you can see in the roulette code above.
+You are going to need a few variables.
+You are going to need a loop.
+You are going to need a condition to test each flip and add the result to a counter.
+Pseudo code:
+Declare a tails and a heads counter variables and set them each to 0.
+Create a loop that returns a number between 0 and 1.
+Create a condition statement to add to tails if the number is 0.
+Create a condition statement to add to heads if the number is 1.
+
+Download and install pycharm.
+
+Copy and run the code from 25.3.1. Basic example:
+<web_resource>https://docs.python.org/2/library/unittest.html</web_resource>
+
+Note:We will use unittest next class.
+
+Download and install Selenium IDE:
+<web_resource>https://www.seleniumhq.org/projects/ide/</web_resource>
+
+Add the Chrome extension:
+<web_resource>https://chrome.google.com/webstore/detail/element-locator/pldlfgnilfdheajekfphjkjeooignhkc?hl=en</web_resource>
+
+</Exercises> 
+</Class5>
