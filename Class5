@@ -93,8 +93,35 @@ for [element] in [set]:
 </Lecture>
 
 <Lab>
+Download the geckodriver-v0.20.1-win32.zip from:
+<web_resource>https://github.com/mozilla/geckodriver/releases</web_resource>
+Extract the zip to a folder and copy geckodriver.exe to your C:\Python27 directory
+
 Open a new Python IDLE session and open a new file.
 Enter the following code:
+###################################
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+try:
+    driver = webdriver.Firefox()
+    driver.get("http://www.python.org")
+    assert "Python" in driver.title
+    elem = driver.find_element_by_name("q")
+    elem.clear()
+    elem.send_keys("pycon")
+    elem.send_keys(Keys.RETURN)
+    assert "No results found." not in driver.page_source
+    assert "Happy Birthday" in driver.page_source
+#driver.close()
+except:
+    driver.quit()
+    print'No Happy Birthday'
+
+###################################
+Remove or comment out the lines that search for Happy Birthday.  
+Run the code again and observe what happens.
+
 # external module imports
 import time
 import datetime
@@ -262,9 +289,7 @@ Get the latest chromedriver_win32.zip ,unzip it, and copy chromedriver.exe into 
 
 Be sure you can run the “phones” code from Class 4.
 
-Download the geckodriver-v0.20.1-win32.zip from:
-<web_resource>https://github.com/mozilla/geckodriver/releases</web_resource>
-Extract the zip to a folder and copy geckodriver.exe to your C:\Python27 directory
+
 
 Alter the Class 4 code to count the number of shirts returned from a search for “shirts”.
 Alter the Class 4 code to count the number of shoes returned from a search for “shoes”
