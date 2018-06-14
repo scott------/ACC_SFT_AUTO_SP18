@@ -52,6 +52,8 @@ search_term = ‘weber’
 max_price = 200 
 result_num = 0
 
+Comments #
+
 Lists, Dictionary, Sets, Tuple, Array
 
 <web_resource>https://www.w3schools.com/python/python_arrays.asp</web_resource>
@@ -90,6 +92,9 @@ while [condition]:
 for [element] in [set]:
 	action
 
+
+Exception handling
+<web_resource>http://www.pythonforbeginners.com/error-handling/exception-handling-in-python</web_resource>
 </Lecture>
 
 <Lab>
