@@ -79,11 +79,11 @@ if/elif/else
 
 score = 82
 if score >= 90:
-	print ‘A’
+	print "A"
 elif score >= 80:
-print ‘B’
+    print "B"
 else:
-print ‘Try again’  
+    print "Try again"
 
 Loops
 while [condition]:
@@ -109,7 +109,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 try:
-    driver = webdriver.Firefox()
+    driver = webdriver.Chrome()
     driver.get("http://www.python.org")
     assert "Python" in driver.title
     elem = driver.find_element_by_name("q")
