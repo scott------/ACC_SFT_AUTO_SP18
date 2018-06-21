@@ -42,7 +42,7 @@ for i in range(10):
 for n in range(3,10)
 	print(n)
 
-For ducks in range(2,2,50)
+for ducks in range(2,50,2)
 	print(ducks)
 ###################################
 
