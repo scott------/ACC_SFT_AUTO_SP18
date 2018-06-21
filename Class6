@@ -1,0 +1,206 @@
+<Class6>
+<Intro>
+<Review>
+Programming in a Nutshell
+</Review>
+</Intro>
+
+<CourseInfo>
+Course information: All course info is posted to GitHub.  
+<web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18</web_resource>
+The make up day for our cancelled class will be July 12th
+</CourseInfo> 
+
+<ClassFlow> 
+Survey
+Short Lecture
+Lab
+</ClassFlow>
+
+<Survey>
+How was the meetup?  Who went?
+Have you heard of the IBM Debater project?
+<web_resource>https://www.research.ibm.com/artificial-intelligence/project-debater/faq.html</web_resource>
+<web_resource>https://www.youtube.com/watch?v=UeF_N1r91RQ</web_resource>
+What is the difference between Selenium and Selenium IDE?
+</Survey> 
+
+<Lecture>
+Potential solutions for flipping a coin problem
+
+Functions
+<web_resource>https://www.w3schools.com/python/python_functions.asp</web_resource>
+
+Arguments/Parameters (by value / by reference)
+def 
+
+Range function (start, stop, step)
+##################################
+for i in range(10):
+	print(i)
+
+for n in range(3,10)
+	print(n)
+
+For ducks in range(2,2,50)
+	print(ducks)
+###################################
+
+
+Casting
+<web_resource>http://www.pitt.edu/~naraehan/python2/data_types_conversion.html</web_resource>
+
+
+Review Classes, Methods, Properties
+<web_resource>https://www.w3schools.com/python/python_classes.asp</web_resource>
+
+
+Libraries/Modules
+<web_resource>https://www.w3schools.com/python/python_modules.asp</web_resource>
+
+#####################################################
+#MontyHall Problem Code walk through
+import random
+
+games = 100000
+
+doors = ["goat","goat", "car"]
+change_wins = 0
+change_loses = 0
+
+while games > 0:
+
+    #change the order of the "doors" to increase randomness
+    random.shuffle(doors)
+
+    #randomly you pick a door (n)
+    your_pick = random.randrange(3)
+    
+    #monty removes a goat
+    #monty picks a door, monty can not pick your door and doors[choice]!="car"
+    #generate a range of 3 numbers
+    sequence = range(3)
+
+    #shuffle those numbers
+    random.shuffle(sequence)
+
+    #use the numbrs to chose which door monty chooses aka montys_choice
+    for montys_choice in sequence:
+        #if monty matches your door or the car keep spinning aka continue
+        if montys_choice == your_pick or doors[montys_choice] == "car":
+            continue
+
+    # now if you change, you lose if doors[n]=="car"
+    if doors[your_pick] == "car":
+        change_loses += 1
+    else:
+        change_wins += 1
+    games = games - 1
+
+print "Changing has %s wins and %s losses" % (change_wins, change_loses)
+perc = (100.0 * change_wins) / (change_wins + change_loses)
+print "Percentage winning if you change every time %.1f%% of the time" % perc
+####################################################################
+
+
+
+
+
+Software Tools - PyCharm, Selenium, Katalon Studio, Katalon Chrome Extension
+<web_resource>https://chrome.google.com/webstore/detail/katalon-recorder-selenium/ljdobmomdgdljniojadhoplhkpialdid</web_resource>
+
+Software Platforms - Database, Operating Systems, Containers/VMs, Cloud / App Fabrics
+
+
+Walk through code:
+######################################################################
+# -*- coding: utf-8 -*-
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import Select
+from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoAlertPresentException
+import unittest, time, re
+
+class LoginAndBook(unittest.TestCase):
+    def setUp(self):
+        self.driver = webdriver.Firefox()
+        self.driver.implicitly_wait(30)
+        self.base_url = "http://demoaut.katalon.com/"
+        self.verificationErrors = []
+        self.accept_next_alert = True
+    
+    def test_login_and_book(self):
+        driver = self.driver
+        driver.get("http://demoaut.katalon.com/")
+        driver.find_element_by_id("btn-make-appointment").click()
+        driver.find_element_by_id("txt-username").click()
+        driver.find_element_by_id("txt-username").clear()
+        driver.find_element_by_id("txt-username").send_keys("John Doe")
+        driver.find_element_by_id("txt-password").clear()
+        driver.find_element_by_id("txt-password").send_keys("ThisIsNotAPassword")
+        driver.find_element_by_id("btn-login").click()
+        driver.quit()
+    
+    def is_element_present(self, how, what):
+        try: self.driver.find_element(by=how, value=what)
+        except NoSuchElementException as e: return False
+        return True
+    
+    def is_alert_present(self):
+        try: self.driver.switch_to_alert()
+        except NoAlertPresentException as e: return False
+        return True
+    
+    def close_alert_and_get_its_text(self):
+        try:
+            alert = self.driver.switch_to_alert()
+            alert_text = alert.text
+            if self.accept_next_alert:
+                alert.accept()
+            else:
+                alert.dismiss()
+            return alert_text
+        finally: self.accept_next_alert = True
+    
+    def tearDown(self):
+        self.driver.quit()
+        self.assertEqual([], self.verificationErrors)
+
+if __name__ == "__main__":
+    unittest.main()
+#################################################################
+ 
+</Lecture>
+
+<Lab>
+Launch IDLE, open a new file, copy the webdriver code we walked through during lecture, run it, and observe.
+
+Install/Download/Setup Katalon
+<web_resource>https://www.katalon.com/resources-center/tutorials/web/get-started/install-setup-katalon-studio/</web_resource>
+
+
+Work through the sample web automation test project
+<web_resource>https://www.katalon.com/resources-center/tutorials/sample-web-automation-test-project/</web_resource>
+
+
+
+
+</Lab>
+
+<Exercises> 
+Go through this tutorial on the Katalon page:
+<web_resource>https://www.katalon.com/resources-center/tutorials/create-test-case-using-manual-mode/</web_resource>
+
+Go through this tutorial and run all the test scripts.  Try exporting them to python (click export and choose python) and see if you can walk through/edit the code:
+<web_resource>https://docs.katalon.com/pages/viewpage.action?pageId=13697321</web_resource>
+
+Optional:
+Walk through the data driven testing tutorial (we will cover this next week)
+<web_resource>https://www.katalon.com/resources-center/tutorials/data-driven-testing/</web_resource>
+
+
+
+</Exercises> 
+</Class6>
