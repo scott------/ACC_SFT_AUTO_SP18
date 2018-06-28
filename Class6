@@ -38,11 +38,9 @@ Range function (start, stop, step)
 ##################################
 for i in range(10):
 	print(i)
-
-for n in range(3,10)
+for n in range(3,10):
 	print(n)
-
-For ducks in range(2,2,50)
+for ducks in range(2,200,50):
 	print(ducks)
 ###################################
 
