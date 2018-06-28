@@ -1,0 +1,65 @@
+<Class7>
+<Intro>
+<Review>
+Programming in a Nutshell
+</Review>
+</Intro>
+
+<CourseInfo>
+Course information: All course info is posted to GitHub.  
+<web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18</web_resource>
+The make up day for our cancelled class will be July 12th
+</CourseInfo> 
+
+<ClassFlow> 
+Survey
+Short Lecture
+Lab
+</ClassFlow>
+
+<Survey>
+Netflix chaos injection in QA process
+<web_resource>https://www.youtube.com/watch?v=CZ3wIuvmHeM</web_resource>
+</Survey> 
+
+<Lecture>
+
+Review:
+Functions
+Arguments/Parameters (by value / by reference)
+Casting
+Review Classes, Methods, Properties
+Libraries/Modules
+
+Scoping
+Referencing
+Library alias (e.g. - baby class)
+<web_resource>https://docs.python.org/2.0/ref/import.html</web_resource>
+
+Data Driven testing - SmartBear has a decent write-up
+<web_resource>https://smartbear.com/learn/automated-testing/introduction-to-data-driven-testing/</web_resource>
+
+test automation progression - manual, playback, ide, scripts
+
+Source code review
+<web_resource>http://www.blazedemo.com/purchase.php</web_resource>
+
+Katalon test suites
+</Lecture>
+
+<Lab>
+
+Let's automate testing of the blazedemo which is a small web forms app that books you a flight.
+<web_resource>http://www.blazedemo.com/purchase.php</web_resource>
+
+Katalon data driven testing tutorial issues
+<web_resource>https://www.katalon.com/resources-center/tutorials/data-driven-testing/</web_resource>
+
+</Lab>
+
+<Exercises> 
+Build a data driven test for the blazedemo site which verifies each of the possibe flights can be booked
+<web_resource>http://www.blazedemo.com/purchase.php</web_resource>
+
+</Exercises> 
+</Class7>
