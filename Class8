@@ -1,0 +1,100 @@
+<Class8>
+<Intro>
+<Review>
+Programming in a Nutshell
+</Review>
+</Intro>
+
+<CourseInfo>
+Course information: All course info is posted to GitHub.  
+<web_resource>https://github.com/scott------/ACC_SFT_AUTO_SP18</web_resource>
+</CourseInfo> 
+
+<ClassFlow> 
+Survey
+Short Lecture
+Lab
+</ClassFlow>
+
+<Survey>
+Student Survey
+
+Has anyone heard of Quality Jam?
+“Machine Learning & How it Affects Testers”
+<web_resource>https://www.youtube.com/watch?v=kTjaf34U6tQ</web_resource>
+</Survey> 
+
+<Lecture>
+Review:
+QA Organizations and Operations
+Testing Types
+Programming:
+Libraries/Modules
+Classes / Objects
+Methods
+Properties
+Variables
+Branching
+Loops
+Procedures
+Functions
+Arguments/Parameters (by value / by reference)
+Casting
+<web_resource>https://www.w3schools.com/python/</web_resource>
+
+Selenium / Selenium IDE / Katalon / Katalon Player
+</Lecture>
+
+<Lab>
+Follow along as I create a data driven test for blaze demo:
+Create data file 
+(pay attention to what you name the variables in your header)
+Create and save case
+Add two variables (variables tab)
+(Remember to name the variables exactly what you have in the header of the data file)
+Change input types to variables (manual tab) 
+Add Data file to Katalon (right click data file > new > data file)
+Create suite
+Add case
+Show data bindings
+Add your test Data
+Map/Bind variables
+Run 
+
+Review this code:
+#print all the city combo pairs
+departure_cities = ["Paris","Philadelphia","Boston","Portland","San Diego","Mexico City","São Paolo"]
+destinations = ["Buenos Aires","Rome","London","Berlin","New York","Dublin","Cairo"]
+
+for city in departure_cities:
+    for destination in destinations:
+        print city + "," + destination
+
+Open IDLE.
+Create a new file
+Copy and paste the script from above
+Save and Run the script
+Note when you attempt to save this script you may receive an I/O warning.  Press ok to proceed.
+(what causes the I/O warning?)
+Look at the output
+
+Building test automation for Blaze Demo site.
+We are going to automate the testing of www.blazedemo.com
+
+From last week complete the exercise to build a data driven test for all flight combos
+1. Open blaze demo website www.blazedemo.com
+2. Build a data driven test to test all flights to all cities
+Hint: use the output from the python script above and save it as a csv 
+
+
+
+
+
+
+For reference:
+Katalon data driven testing tutorial
+<web_resource>https://www.katalon.com/resources-center/tutorials/data-driven-testing/</web_resource>
+
+</Lab>
+
+</Class8>
